@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ColorUtils {
 	public static String getRandColorCode() {
-		String r, g, b;
+		String r, g, b, d;
 		Random random = new Random();
 		r = Integer.toHexString(random.nextInt(256)).toUpperCase();
 		g = Integer.toHexString(random.nextInt(256)).toUpperCase();
@@ -14,6 +14,6 @@ public class ColorUtils {
 		g = g.length() == 1 ? "0" + g : g;
 		b = b.length() == 1 ? "0" + b : b;
 
-		return r + g + b;
+		return r + g + b +ｄ;
 	}
 }
